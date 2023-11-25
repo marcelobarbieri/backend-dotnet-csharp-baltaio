@@ -4,6 +4,6 @@ namespace UtmBuilder.Core;
 
 public class Utm
 {
-    public Url Url { get; set; } = null!;
-    public Campaign Campaign { get; set; } = null!;
+    public Url Url { get; set; }
+    public Campaign Campaign { get; set; }
 }

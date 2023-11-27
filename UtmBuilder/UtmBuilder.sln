@@ -3,20 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtmBuilder.Core", "UtmBuilder.Core\UtmBuilder.Core.csproj", "{06D3AA9C-9D3D-4F1E-8067-208876D505DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtmBuilder.Core", "UtmBuilder.Core\UtmBuilder.Core.csproj", "{06D3AA9C-9D3D-4F1E-8067-208876D505DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtmBuilder.Core.Tests", "UtmBuilder.Core.Tests\UtmBuilder.Core.Tests.csproj", "{BB08EA46-2735-49C7-94B6-E19BA1E164BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{06D3AA9C-9D3D-4F1E-8067-208876D505DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06D3AA9C-9D3D-4F1E-8067-208876D505DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06D3AA9C-9D3D-4F1E-8067-208876D505DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06D3AA9C-9D3D-4F1E-8067-208876D505DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB08EA46-2735-49C7-94B6-E19BA1E164BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB08EA46-2735-49C7-94B6-E19BA1E164BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB08EA46-2735-49C7-94B6-E19BA1E164BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB08EA46-2735-49C7-94B6-E19BA1E164BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

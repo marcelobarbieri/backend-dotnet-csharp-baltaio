@@ -1,5 +1,6 @@
 ﻿using UtmBuilder.Core.Extensions;
 using UtmBuilder.Core.ValueObjects;
+using UtmBuilder.Core.ValueObjects.Exceptions;
 
 namespace UtmBuilder.Core;
 
@@ -25,6 +26,19 @@ public class Utm
 
     public static implicit operator string(Utm utm)
         => utm.ToString();
+
+    public static implicit operator Utm(string link)
+    {
+        if (string.IsNullOrEmpty(link))
+            throw new InvalidUrlException();
+
+        var url = new Url(link);
+        var segments = url.Address.Split("?");
+        if (segments.Length == 1)
+            throw new InvalidUrlException("No segments were provided");
+
+        var pars = segments[1].Split("&");
+    }
 
     public override string ToString()
     {

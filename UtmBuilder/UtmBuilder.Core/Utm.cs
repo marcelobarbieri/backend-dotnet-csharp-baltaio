@@ -21,4 +21,10 @@ public class Utm
     /// Campaign Details
     /// </summary>
     public Campaign Campaign { get; }
+
+    public override string ToString()
+    {
+        var str = string.Join("&", null);
+        return "";
+    }
 }

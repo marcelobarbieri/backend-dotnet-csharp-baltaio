@@ -11,10 +11,10 @@ public class InvalidCampaignException : Exception
     }
 
     public static void ThrowIfInvalid(
-        string address,
+        string? item,
         string message = DefaultErrorMessage)
     {
-        if (string.IsNullOrEmpty(address))
-            throw new InvalidUrlException(message);
+        if (string.IsNullOrEmpty(item))
+            throw new InvalidCampaignException(message);
     }
 }
